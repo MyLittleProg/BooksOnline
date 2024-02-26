@@ -1,0 +1,398 @@
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: Segoe_WP_Light;
+    src: url(../style/fonts/Segoe_WP_Light.ttf);
+}
+@media(max-width:1030px){
+    .WishList{
+        padding: 34px 0 0 30px !important;
+    }
+    .Cart{
+        margin: 24px 0 0 20px !important;
+    }
+    .showText{
+        margin: 0 0 0 150px !important;
+    }
+}
+@media(max-width:978px){
+    .Search{
+        width:325px !important;
+    }
+    .Search__input{
+        width: 200px !important;
+    }
+    .PrePreTop__li{
+        font-size: 17px !important;
+    }
+    .PrePreTop{
+        height: 38px !important;
+    }
+    .PrePreTop__li{
+        margin-left: 0px;
+        padding-left: 13px !important;
+        padding-right: 13px !important;
+    }
+    .PrePreTop__li_active{
+        padding: 5px 21px 0px 21px !important;
+    }
+}
+@media(max-width:840px){
+    .showText{
+        display: none;
+    }
+    .Cart__title{
+        font-size: 14px !important;
+    }
+    .Cart__item{
+        font-size: 11px !important;
+        margin: 2px 0 0 2px !important;
+    }
+    .Cart__money{
+        font-size: 16px !important;
+        margin: 10px 0 0 0 !important;
+    }
+    .Cart__Buttom{
+        font-size: 13px !important;
+        width: 60px !important;
+        height: 25px !important;
+        margin: 5px 0 0 5px !important;
+    }
+    .Cart{
+        width: 145px !important;
+    }
+    .WishList__numbers{
+        display: none;
+    }
+    .WishList__text{
+        font-size: 16px !important;
+    }
+    .WishList__star{
+        margin: 0 0 0 -5px !important
+    }
+    .PrePreTop__li_active{
+        padding: 5px 7px 0px 7px !important;
+    }
+}
+@media (max-width:771px){
+    .Search__text{
+        display: none;
+    }
+    .Search{
+        width: 250px !important;
+    }
+    .WishList{
+        display: none;
+    }
+    .Cart{
+        display: none;
+    }
+    .Search{
+        display: none;
+    }
+    .Elemnts{
+        justify-content: space-between;
+    }
+    .Menu__Burger{
+        display: block !important;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin: 38px 46px 0px 0;
+        cursor: pointer;
+    }
+    .Border__Burger{
+        border: 1px solid;
+        width: 50px;
+        height: 40px;
+        margin: -20px 0 0 -10px;
+        border-radius: 10px;
+        border-color:#C4C4C4;
+    }
+    .Menu__Burger span{
+        content: '';
+        position: absolute;
+        background-color: rgb(100, 100, 100);
+        width: 100%;
+        height: 3px;
+        top: 9px;
+        transition: all 0.7s ease 0s;
+    }
+    .Menu__Burger::before,
+    .Menu__Burger::after{
+        content: '';
+        position: absolute;
+        background-color: rgb(100, 100, 100);
+        width: 100%;
+        height: 3px;
+        transition: all 0.7s ease 0s;
+    }
+    .Menu__Burger::before{
+        top:0;
+    }
+    .Menu__Burger::after{
+        bottom: 0;
+    }
+    .PrePreTop{
+        display: none;
+    }
+    .Header{
+        height: 110px !important;
+    }
+    .PreTop{
+        border-bottom: 1px solid !important;
+        border-color:#C4C4C4 !important;
+        height: 85px !important;
+    }
+    .Logo{
+        height: 50px !important;
+    }
+    .Search{
+        margin: 25px 0 0 15px !important;
+    }
+    .active .Menu__Burger::before{
+        transform: rotate(45deg);
+        top:9px;
+    }
+    .active .Menu__Burger::after{
+        transform: rotate(-45deg);
+        bottom:9px;
+    }
+    .active .Menu__Burger span{
+        display: none;
+    }
+    .activePlashka{
+        transition: all 0.4s ease 0s;
+        position: fixed !important;
+        width: 100% !important;
+        height: 100% !important;
+        background-color: rgb(133, 133, 133);
+        z-index: 1;
+    }
+}
+.showText{ 
+    color:'white';
+    position: absolute;
+    margin-left: 310px;
+}
+.hideText{
+    display: none;
+}
+.Header{
+    width: 100%;
+    height: 179px;
+}
+.Menu{
+    width: 100%;
+    height: 28px;
+    background-color: #424242;
+}
+.Menu__ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.Menu__li{
+    color: white;
+    font-family: Segoe_WP_Light;
+    margin-top: 4px;
+    margin-right: 21px;
+    cursor: pointer;
+}
+.PreTop{
+    height: 110px;
+    background-image: url(/src/style/img/back_color.png);
+}
+.Logo{
+    margin: 20px 0 0 12px;
+}
+.Elemnts{
+    width: 100%;
+    display: flex;
+}
+.Search{
+    margin: 37px 0 0 44px;
+    border-radius: 5px;
+    background-color: #79B260;
+    height: 40px;
+    width: 458px;
+}
+.Search__input{
+    width: 328px;
+    height: 32px;
+    margin: 4px 0 0 5px;
+    border: 0px;
+    border-radius: 2px;
+    outline: none;
+    font-size: 17px;
+}
+.Lupa{
+    top: 8px;
+    padding: 0px 0px 0px 12px;
+    position: relative;
+}
+.Search__text{
+    margin: 0 0 0 8px;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    font-family: Segoe_WP_Light;
+    background-color: transparent;
+    border:0px;
+}
+.Search__text:hover{
+    cursor: pointer;
+}
+.Cart{
+    margin: 24px 0 0 52px;
+    width: 190px;
+    height: 70px;
+    border-right: 1px solid;
+    border-color: #C4C4C4;
+}
+.Cart__moneyButtom{
+    margin: 0 0 0 0;
+    display: flex;
+}
+.Cart__text{
+    list-style: none;
+    display: flex;
+    font-family: Segoe_WP_Light;
+}
+.Cart__title{
+    margin: 0 0 0 9px;
+    color: #6D6D6D;
+    font-weight: 600;
+    font-size: 20px;
+}
+.Cart__item{
+    color: #6D6D6D;
+    font-weight: 600;
+    font-size: 13px;
+    margin: 7px 0 0 7px;
+}
+.Cart__img{
+    float: left;
+    display: block;
+}
+.Cart__money{
+    margin: 8px 0 0 -25px;
+    color: #6D6D6D;
+    font-weight: 700;
+    font-size: 27px;
+}
+.Cart__Buttom{
+    margin: 9px 0 0 14px;
+    color: white;
+    border-radius: 5px;
+    height: 28px;
+    width: 83px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Segoe_WP_Light;
+    background-color: #282828;
+}
+.WishList{
+    padding: 34px 0 0 47px;
+}
+.WishList__text{
+    font-family: Segoe_WP_Light;
+    font-size: 21px;
+    color: #6D6D6D;
+    margin:0 0 0 -20px;
+}
+.WishList__numbers{
+    font-family: Segoe_WP_Light;
+    color: white;
+    padding: 0 5px 0px 5px;
+    border-radius: 10px;
+    background-color: #79B260;
+    margin: -10px 0 0 40px;
+    position: absolute;
+}
+.PrePreTop{
+    height: 41px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #DEDEDE;
+}
+.PrePreTop__ul{
+    display: flex;
+    list-style: none;
+}
+.PrePreTop__li{
+    cursor: pointer;
+    color: #6D6D6D;
+    font-family: Segoe_WP_Light;
+    text-align: center;
+    font-size: 19px;
+    padding: 5px 21px 9px 21px;
+}
+.PrePreTop__li:hover{
+    color: white;
+    background-image: url('/src/style/img/back_button.png');
+}
+.PrePreTop__li_active{
+    cursor: pointer;
+    font-family: Segoe_WP_Light;
+    text-align: center;
+    font-size: 19px;
+    padding: 5px 21px 9px 21px;
+    color: white;
+    background-image: url('/src/style/img/back_button.png');
+}
+.ImgShape{
+    height: 35px;
+}
+.ImgStart{
+    height: 30px;
+    background-color: white;
+    border:0px;
+    border-radius: 50%;
+}
+.BtnCart{
+    font-size: 18px;
+    margin: 10% 0 0 35%;
+}
+.BtnCart::before{
+    content: '';
+    position: absolute;
+    width: 290px;
+    height: 1px;
+    margin: 20px 0 0 -300px;
+    background-color: black;
+}
+.BtnCart::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0 0 5px;
+    background-color: black;
+}
+.BtnWish{
+    font-size: 18px;
+    margin: 15% 0 0 35%;
+}
+.BtnWish::before{
+    content: '';
+    position: absolute;
+    width: 290px;
+    height: 1px;
+    margin: 20px 0 0 -300px;
+    background-color: black;
+}
+.BtnWish::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0 0 5px;
+    background-color: black;
+}
+.TextCart{
+    font-family: Segoe_WP_Light;
+    color: white;
+    margin-left:5px;
+}

@@ -1,0 +1,288 @@
+@font-face {
+    font-family: Segoe_WP_Light;
+    src: url(../style/fonts/Segoe_WP_Light.ttf);
+}
+@media(max-width:1030px){
+      .SliderAndDealMonth{
+        display: none !important;
+      }
+      .Books{
+        width: 600px !important;
+        height: 1140px !important;
+      }
+      .CardBook{
+        margin: 24px 35px 0 0px !important;
+      }
+      .Menu::after{
+        width: 65px !important;
+    }
+}
+@media(max-width:820px){
+    .Books{
+        width: 490px !important;
+        height: 1399px !important;
+    }
+    .Menu__btns{
+        padding: 7px 24px 7px 12.7px !important;
+    }
+    .Menu::after{
+        width: 0px !important;
+    }
+    .Menu__btns_active{
+        padding: 7px 24px 7px 13px !important;
+    }
+}
+@media (max-width:767px){
+    .Menu__btns{
+        display: none;
+    }
+    .Menu{
+        border-top: 1px solid;
+        border-color: #D8DCE0;
+    }
+    .Books{
+        width: 282px !important;
+        height: 2175px !important;
+    }
+    .CardBook{
+        margin: 24px 20px 0 0px !important;
+    }
+    .leftCategories{
+        width: 170px !important;
+    }
+    .leftCategories__TitleAll{
+        padding: 5px 134px 5px 18px !important;
+    }
+    .leftCategories__TitleAll_active{
+        padding: 5px 134px 5px 18px !important;
+    }
+}
+@media (max-width:485px){
+    .Books{
+        width: 165px !important;
+        height: 3985px !important;
+    }
+}
+li{
+    list-style: none;
+}
+a{
+    color:#525252;
+}
+:root{
+    --after-heigth:1px;
+}
+.SliderAndDealMonth{
+    display: flex;
+}
+.DealOfTheMonth{
+    margin: 12px 0 0 12px;
+}
+.ButtonDeal{
+    margin: 285px 0 0 95px;
+    position: absolute;
+    background-color: #5BB75B;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+    color: white;
+}
+.ButtonDeal:hover{
+    opacity: 85%;
+}
+.Slider{
+    margin: 14px 0 0 12px;
+    width: 714px;
+    height: 305px;
+}
+.BackBtn{
+    z-index: 1;
+    position: absolute;
+    margin: 125px 0 0 10px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0px;
+}
+.NextBtn{
+    z-index: 1;
+    position: absolute;
+    margin: 125px 0 0 670px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0px;
+}
+.StrelkaBack{
+    padding: 0 6px 0 0;
+}
+.StrelkaNext{
+    padding: 0 0 0 6px;
+}
+.Main{
+    display: block;
+    color: #525252;
+    font-family: Segoe_WP_Light;
+}
+.Wrapper{
+    display: flex;
+}
+.leftCategories{
+    width: 188px;
+    height: 980px;
+    border: 1px solid;
+    border-color: #D8DCE0;
+    margin: 8px 0 0 11px;
+}
+.leftCategories__Title{
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: -6px;
+    margin-bottom: 15px;
+    padding-left: 24px;
+}
+.leftCategories__Titleh2{
+    font-size: 17px;
+    margin: 10px 0 10px -6px;
+    padding-left: 24px;
+}
+.leftCategories__li{
+    font-size: 15.3px;
+    font-weight: 500;
+    padding: 5px 0 5px 24px;
+    cursor: pointer;
+}
+.leftCategories__li::before{
+    content: '';
+    position: absolute;
+    background-color: #D8DCE0;
+    height: var(--after-heigth);
+    width: 139px;
+    margin: 25px 0 0 0;
+}
+.leftCategories__TitleAll{
+    font-weight: 600;
+    padding: 5px 151px 5px 18px;
+}
+.leftCategories__TitleAll:hover{
+    background-image: url('/src/style/img/back_button.png');
+    color: white;
+}
+.leftCategories__TitleAll_active{
+    font-weight: 600;
+    padding: 5px 151px 5px 18px;
+    background-image: url('/src/style/img/back_button.png');
+    color: white;
+}
+.leftCategories__li:hover::before{
+    visibility: hidden;
+}
+.leftCategories__li:hover{
+    color: white;
+    background-image: url('/src/style/img/back_button.png');
+}
+.leftCategories__li_active{
+    font-size: 15.3px;
+    font-weight: 500;
+    padding: 5px 0 5px 24px;
+    color: white;
+    background-image: url('/src/style/img/back_button.png');
+    cursor: pointer;
+}
+.Books{
+    width: 798px;
+    height: 880px;
+    border: 1px solid;
+    border-top: 0px;
+    border-color: #D8DCE0;
+    margin: -1px 0 0 7px;
+}
+.Books__title{
+    font-weight: 500;
+    margin: 19px 0 0 25px;
+}
+.Menu{
+    margin:8px 0 0 7px;
+}
+.Menu::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 263px;
+    background-color:#D8DCE0;
+    margin: 37px 0 0 0;
+}
+.Menu__btns{
+    font-size: 16.6px;
+    padding: 7px 24px 7px 24px;
+    border: 1px solid;
+    border-right: 0px;
+    border-color: #D8DCE0;
+    font-family: Segoe_WP_Light;
+}
+.Menu__btns_last{
+    border-right: 1px solid;
+    border-color: #D8DCE0;
+}
+.Menu__btns:hover{
+    background-color: white;
+    border-bottom: 0px;
+}
+.Menu__btns_active{
+    font-size: 16.6px;
+    padding: 7px 24px 7px 24px;
+    border: 1px solid;
+    border-color: #D8DCE0;
+    font-family: Segoe_WP_Light;
+    background-color: white;
+    border-bottom: 0px;
+}
+.ContentBooks{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0 0 24px;
+}
+.CardBook{
+    text-align: center;
+    margin: 24px 46px 0 0px;
+    padding: 5px 5px 1px 5px;
+    box-shadow: 0px 0px 4px 0.1px black;
+    border-radius: 5px;
+}
+.CardBook:hover{
+    box-shadow: 0px 0px 7px 0.1px black;
+}
+.CardBook__price{
+    width: 50%;
+    height: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    color: #F15E61;
+    margin: 0px 0 0 15px;
+}
+.CardBook__title{
+    width: 108px;
+    height: 50px;
+    padding: 10px 0 0 0px;
+    text-align: center;
+}
+.pagination{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 79px 0 0 0px;
+    justify-content: flex-end
+}
+.Offer{
+    position: absolute;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    background-color: #F05356;
+    border-radius: 50%;
+    font-weight: 600;
+    color: white;
+    margin: -20px 0 0 70px;
+}

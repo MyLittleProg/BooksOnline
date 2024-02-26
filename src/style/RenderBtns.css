@@ -1,0 +1,19 @@
+
+.paginationNumber{
+    font-size: 15px;
+    font-family: Segoe_WP_Light;
+    font-weight: 600;
+    color: #5c5c5c;
+    border:0px;
+    background-color: transparent;
+    margin: 0 0 0 2px;
+    padding:0px 5px 0px 5px;
+    cursor: pointer;
+}
+.pagination_active{
+    border-top: 1px solid #E0E0E0 !important;
+    border-left: 1px solid #E0E0E0 !important;
+    border-right: 1px solid #E0E0E0 !important;
+    border-bottom: 3px solid;
+    border-color:#5BB75B;
+}

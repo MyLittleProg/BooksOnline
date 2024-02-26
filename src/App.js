@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useContext, useState } from 'react';
+import cl from './style/App.module.css'
+import { BooksContxext } from './context/context';
+import { BrowserRouter} from 'react-router-dom';
+import AppRouter from './AppRouter';
 function App() {
+  const [valueBooks,setValueBooks] = useState([])
+  const [valueMenu,setValueMenu] = useState(null)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BooksContxext.Provider value={{
+      valueBooks,setValueBooks,
+      valueMenu,setValueMenu
+    }}>
+    <BrowserRouter>
+    <div className={cl.App}>
+      <AppRouter/>
     </div>
+    </BrowserRouter>
+    </BooksContxext.Provider>
   );
 }
 

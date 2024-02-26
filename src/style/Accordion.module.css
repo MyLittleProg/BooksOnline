@@ -1,0 +1,75 @@
+.Footer__links{
+    display: block;
+    margin: 0 0 0 28px;
+}
+.Footer__CardTitle{
+    color: #DDDDDD;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.Footer__CardLinks{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    display: none;
+}
+.Footer__Card{
+    width: 250px;
+    padding: 10px 0 0 5px;
+}
+.Card__li{
+    width: 200px;
+    margin: 5px 0 0 4px;
+    border-bottom: 1px solid;
+    border-color: #544F54;
+}
+.Footer__CardLinks{
+    display: none;
+}
+.Footer__links{
+    display: block !important;
+}
+.Footer__CardTitle{
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.Footer__CardTitle::after,
+.Footer__CardTitle::before{
+    content: '';
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    width: 10px;
+    top: 5px;
+    position: absolute;
+}
+.Footer__CardTitle::after{
+    transition: all 0.4s ease 0s;
+    transform: rotate(-40deg);
+    left:7px;
+}
+.Footer__CardTitle::before{
+    transition: all 0.4s ease 0s;
+    transform: rotate(40deg);
+    left: 0px;
+}
+.Footer__CardTitle_active{
+    color: #DDDDDD;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.Footer__CardTitle_active::after{
+    transition: all 0.4s ease 0s;
+    transform: rotate(40deg);
+    left:7px;
+}
+.Footer__CardTitle_active::before{
+    transition: all 0.4s ease 0s;
+    transform: rotate(-40deg);
+    left:0px;
+}
